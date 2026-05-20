@@ -1,0 +1,14 @@
+API_RULE
+Match Object: HTTP Request URL
+Match Type: contains
+String: /api
+Pool: API_POOL
+
+STATIC_RULE
+Match Object: HTTP Request URL
+Match Type: contains
+String: /images
+Pool: STATIC_POOL
+
+DEFAULT_RULE
+Pool: FRONTEND_POOL

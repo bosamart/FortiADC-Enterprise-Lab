@@ -1,0 +1,18 @@
+vlan 102
+  name BACKEND
+
+interface Ethernet1/1
+  description FortiADC
+  switchport access vlan 102
+
+interface Ethernet1/3
+  description WEB-FRONTEND-01
+  switchport access vlan 102
+
+interface Ethernet1/4
+  description API-SRV-01
+  switchport access vlan 102
+
+interface Ethernet1/5
+  description STATIC-CONTENT-01
+  switchport access vlan 102

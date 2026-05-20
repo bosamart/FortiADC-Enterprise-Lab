@@ -1,0 +1,19 @@
+Virtual Server: HTTPS_VIP
+Type: Layer 7 HTTPS
+IP Address: 192.168.103.101
+Port: 443
+
+Application Profile:
+- HTTPS
+
+SSL Offloading:
+- Enabled
+
+Real Server Pool:
+- FRONTEND_POOL
+
+Persistence:
+- Source Address
+
+Load Balance Method:
+- Round Robin

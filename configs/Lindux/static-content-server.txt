@@ -1,0 +1,3 @@
+sudo apt install apache2 -y
+
+echo "STATIC CONTENT SERVER" | sudo tee /var/www/html/images/index.html
